@@ -1,14 +1,14 @@
 Requirements:
 
--Cemu
+-[Cemu](http://cemu.info/index.html#download)
 
--Cemuhook
+-[Cemuhook](https://cemuhook.sshnuke.net/)
 
 -Wii U
 
 -Physical or Digital copy of BOTW for Wii U
 
--Python 3.8.10 (3.9 doesn't work)
+-[Python 3.8.10](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) (3.9 doesn't work)
 	
 # Basic Cemu Setup
 	
