@@ -1,10 +1,10 @@
 Requirements:
 
--Cemu
+`-Cemu
 -Cemuhook
 -Wii U
 -Physical or Digital copy of BOTW for Wii U
--Python 3.8.10 (3.9 doesn't work)
+-Python 3.8.10 (3.9 doesn't work)`
 	
 # Basic Cemu Setup
 	
@@ -13,7 +13,7 @@ Requirements:
 -Run Cemu. Don't fill in the custom mlc or games folder, just hit "Download latest community graphics packs". Press "Next", then "Close". If Cemuhook was
 installed right, there will be a bar on the bottom of the window asking you to download shared fonts. Click download.
 	
-#Controller Setup
+# Controller Setup
 	
 -For this guide, I'll be using a Pro Controller, since it works the best, with the simplest setup. PS4 controllers can be used with DS4Windows to get full
 motion and button control support. Dual JoyCons should work mostly the same as the Pro Controller, with some slight differences. Other controllers will
@@ -30,7 +30,7 @@ close the input configuration.
 -If you have Cemuhook installed, motion controls on Pro Controllers (and probably dual JoyCons) should just work out of the box. For DS4Windows or BetterJoy,
 hover over "Options > GamePad motion source > DSU1", then set it to "By Slot".
 	
-#Vanilla BOTW Setup
+# Vanilla BOTW Setup
 
 -Depending on if you have a physical or digital copy of BOTW, this install process will be a bit different. If you have a physical copy, you'll need to follow
 the regular Cemu dumping guide (https://cemu.cfw.guide/dumping-games), then install them as seen in the game installation guide
@@ -47,7 +47,7 @@ Wii U game right in Cemu. (Although until Cemu supports DLC downloads, you'll st
 Once dumped, you can install the DLC by following the steps in the title installation guide (https://cemu.cfw.guide/installing-games#games-updates-and-dlc).
 If for whatever reason you can't download your digital copy through Cemu, you can just dump it normally (as detailed in the dumping guide).
 
-#Optimization and quick setup for vanilla BOTW
+# Optimization and quick setup for vanilla BOTW
 	
 -Go into the graphics settings (Options > General settings > Graphics), and tick the "Async shader compile" box. This will dramatically decrease stuttering,
 especially when first starting the game.
@@ -64,7 +64,7 @@ The game can be run at higher framerates, but physics issues grow more common th
 -Play for a bit and see how it performs. During the first few minutes of play, there'll be some pop-in and/or lag, which will become less and less common as
 you play through the game.
 	
-#BCML Setup
+# BCML Setup
 
 -Create BCML shortcut. Search Python in Windows search, right click and hit Open file location on "IDLE (Python 3.8 64-bit)". Right click and hit open file location
 on this shortcut, should bring you to "pythonw.exe". Right click the exe and hit "Create Shortcut". Right click the shortcut, hit properties, and add "-m bcml" to
