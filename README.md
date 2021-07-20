@@ -12,7 +12,7 @@ Requirements:
 	
 # Basic Cemu Setup
 	
--Download Cemu (http://cemu.info/index.html#download). Unzip, then download Cemuhook (https://cemuhook.sshnuke.net/) and extract it into Cemu's folder.
+-Download [Cemu](http://cemu.info/index.html#download). Unzip, then download Cemuhook (https://cemuhook.sshnuke.net/) and extract it into Cemu's folder.
 	
 -Run Cemu. Don't fill in the custom mlc or games folder, just hit "Download latest community graphics packs". Press "Next", then "Close". If Cemuhook was installed right, there will be a bar on the bottom of the window asking you to download shared fonts. Click download.
 	
