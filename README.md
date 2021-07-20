@@ -6,7 +6,7 @@ Requirements:
 -Physical or Digital copy of BOTW for Wii U
 -Python 3.8.10 (3.9 doesn't work)
 	
-#Basic Cemu Setup
+# Basic Cemu Setup
 	
 -Download Cemu (http://cemu.info/index.html#download). Unzip, then download Cemuhook (https://cemuhook.sshnuke.net/) and extract it into Cemu's folder.
 	
