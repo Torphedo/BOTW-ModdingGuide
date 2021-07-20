@@ -1,9 +1,13 @@
 Requirements:
 
 `-Cemu
+
 -Cemuhook
+
 -Wii U
+
 -Physical or Digital copy of BOTW for Wii U
+
 -Python 3.8.10 (3.9 doesn't work)`
 	
 # Basic Cemu Setup
