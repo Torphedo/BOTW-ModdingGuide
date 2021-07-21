@@ -1,4 +1,3 @@
-![filepaths](https://user-images.githubusercontent.com/73564623/126426424-ac380e5c-c872-447a-b1f9-a5d44e0073a5.png)
 Requirements:
 
 -[Cemu](http://cemu.info/index.html#download)
