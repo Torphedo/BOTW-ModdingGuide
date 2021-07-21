@@ -1,3 +1,7 @@
+This version of the guide has notes for anyone wanting to create a video tutorial using the guide.
+
+**I would recommend having all of the download requirements opened in a browser. That way, you can show where to download it, without having to cut the video to wait for any large downloads. (For example, having the Python download page open, showing the installer link, then running the installer you downloaded before recording) If you got BOTW on the eShop, I'd suggest holding off on making a video until Cemu's download manager is done. That way, the video won't be outdated once it's finished. Im hoping to create the smoothest possible experience for new users, so being able to download it right in Cemu (using the video) would be preferable.**
+
 Requirements:
 
 -[Cemu](http://cemu.info/index.html#download)
@@ -19,6 +23,8 @@ Requirements:
 # Controller Setup
 	
 -For this guide, I'll be using a Pro Controller, since it works the best, with the simplest setup. PS4 controllers can be used with [DS4Windows](https://ryochan7.github.io/ds4windows-site/) to get full motion and button control support. Dual JoyCons should work mostly the same as the Pro Controller, with some slight differences. Other controllers will generally work, but usually don't support motion control.
+
+**(It's probably a good idea to refer to [BSoD's video](https://youtu.be/Bw7qa94P0ls?t=723), since it goes over PS4 controllers)**
 	
 -Connect your controller to your PC with a wire or Bluetooth. On Switch controllers, this is done by holding down the sync buttons until the lights come on, then pairing with the controller in your Bluetooth settings.
 	
@@ -31,11 +37,16 @@ Note: You may need to turn on the motion server in BetterJoy/DS4Windows to enabl
 
 -Depending on if you have a physical or digital copy of BOTW, this install process will be a bit different. If you have a physical copy, you'll need to follow the regular [Cemu dumping guide](https://cemu.cfw.guide/dumping-games), then install them as seen in the [game installation guide](https://cemu.cfw.guide/installing-games#games-updates-and-dlc).
 
+**This section would be really hard to do on video, since you can't screencap a Wii U. I'd recommend organizing a copy of your game into Base, Update, and DLC folders. Make sure to mention that the base game's folder doesn't have a letter on it (Base being `00050000`, Update being `0005000e`), and that the DLC has a folder named `0010\` inside `content\`.**
+
 -If you bought BOTW on the eShop, follow Cemu's [online play guide](https://cemu.cfw.guide/online-play) to get Cemu working on Nintendo's official servers. Once this is done, go to `Tools > Download Manager`. Hit the connect button next to your account. After a little bit, you should see a list of every Wii U game you own on that account. You can download any of them by right clicking and pressing download.
 	
 -At the time of writing (July 22 2021), Cemu is unable to download DLC. Until it's supported, you'll have to dump it from your console. For this, refer back to the [game dumping guide](https://cemu.cfw.guide/dumping-games). Once dumped, you can install the DLC by following the steps in the [title installation guide](https://cemu.cfw.guide/installing-games#games-updates-and-dlc). If for whatever reason you can't download your digital copy through Cemu, you can just dump it normally (as you would a physical copy).
 
+
 -Note: Even if you don't own BOTW on your Wii U, you can still dump your online files and buy it using the eShop directly in Cemu. You can also buy any other Wii U game right in Cemu. (Although until Cemu supports DLC downloads, you'll still need to install it on your Wii U to dump and obtain the DLC)
+
+**As I mentioned earlier, you may want to hold off on a video guide until the DLC thing is fixed, it would make the whole thing a bit less confusing.**
 
 # Optimization and quick setup for vanilla BOTW
 	
@@ -44,6 +55,8 @@ Note: You may need to turn on the motion server in BetterJoy/DS4Windows to enabl
 -At this point, double click Breath of the Wild to run it. As soon as Link wakes up, save and return to the title screen (Performance will be bad at this stage of setup). In the bottom right, it should say `Ver. 1.5.0`, and `DLC Ver. 3.0`. If it does, that means that all of the game files have been correctly installed!
 	
 -Now for some quick optimizations. In the graphics packs menu `(Options > Graphics packs)`, there will be 3 dropdown menus, and 2 options labelled `Enhancements` and `Graphics`. For each option, you can click on the name to change its settings on the right side of the window, and click the box to enable/disable it. Enable the "Graphics" option, then change the settings in it to your liking. Now, expand the "Mods" dropdown. The most important option here is FPS++. Usually, you'll never need to turn this off. It gives a massive performance boost, and lets you play the game mostly without issue at up to 60 FPS. The game can be run at higher framerates, but physics issues grow more common the higher you go.
+
+**I think this section will really benefit from video, it was pretty annoying to describe in text.**
 	
 -Play for a bit, and see how it performs. During the first few minutes, there'll be some pop-in and/or lag, which will become less and less common as you play through the game.
 	
@@ -51,9 +64,15 @@ Note: You may need to turn on the motion server in BetterJoy/DS4Windows to enabl
 
 -BCML requires Python [3.8.10](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) or [3.7.9](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe) and the [x64 Visual C++ redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads#section-2). When you open the Python installer, there will be a checkbox that says `Add Python to PATH`. You MUST check this box, or else BCML can't be installed. From here, continue as normal, and install the x64 Visual C++ redistributable.
 
+**Make sure to emphasize that you MUST add Python to PATH, it's very important.**
+
 -Open a command prompt anywhere (if you don't know how, just type `cmd` into Windows Search). Run `pip install bcml` (in normal cmd, NOT the python console). You should see a bunch of progress bars, and then a success message.
 
+**Make sure to mention that it's not run in the Python console**
+
 -Next, we'll create a shortcut for BCML. Search Python in Windows search, then right click and hit `Open file location` on `IDLE (Python 3.8 64-bit)`. Right click the shortcut it opens to, and click `Open file location` again. This should bring you to `pythonw.exe`. Right click the exe and hit `Create Shortcut`. Right click the shortcut you created, hit `Properties`, then add ` -m bcml` to the end of the text in the first box. Rename the shortcut to `BCML`, then drag it onto the taskbar to pin it. Now, you can use this shortcut to launch BCML.
+
+**This section feels really verbose in text, it'll probably also benefit from text.**
 
 -Before I go over the final steps in BCML setup, it's a good time to cover some common misconceptions about BCML. BCML isn't actually loading the mods into the game, it's creating a pack of mods then sending them to Cemu to load. This means that you can close BCML as long as it's not in the middle of remerging or changing your mod list in any way. In order to merge multiple mods, it uses the game files you got from your console and edits copies of them as dictated by a mod. **This does NOT edit your original game files, you can uninstall mods whenever you want.**
 
@@ -61,10 +80,18 @@ Note: You may need to turn on the motion server in BetterJoy/DS4Windows to enabl
 
 ![](https://user-images.githubusercontent.com/73564623/126426446-d7b9b54f-cf95-4721-b9e1-9bb56c7d9554.png)
 
+**Showing this process will also probably work better on video.**
+
 Now just set the language to whatever language your game will be in, and BCML's setup should be complete! When you boot the game, go into `Options > Graphics packs` and enable the pack named `BCML` (in the `Mods` dropdown). If you don't enable this, none of the mods installed in BCML will take effect.
+
+**This last section about the BCML graphics pack is very important, people miss this all the time.**
 
 # Getting to know BCML
 
 Now that BCML is set up, you can install some mods. All mods for BOTW are posted on [Gamebanana](https://gamebanana.com/games/5866). Any mods in the `.bnp` format will have an option for `1-Click Install`. When you click it, it'll download the mod right into BCML and then bring up a prompt to install it. The only problem is that there's no download progress bar, and some mods can be massive. There's also an integrated Gamebanana tab in BCML, although it can be slow. Personally, I'd recommend using the download button and saving the mod file. Install the mod file by pressing the `+` in the bottom right of BCML, then press `Browse` and select the mod you downloaded. Assuming everything is set up correctly, it should be applied the next time you boot up the game. If you need any more info, refer to the BCML help.
 
+**It's probably a good idea to install a mod and show it working**
+
 If you're here from the Second Wind discord, the 2 BNP files you want can be found [here](https://github.com/CEObrainz/Second-Wind/releases). Since it's a big mod, things can break pretty easily. Usually, other mods should go above SW in the mod list.
+
+**This last bit isn't really necesary for the video.**
