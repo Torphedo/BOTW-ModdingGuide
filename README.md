@@ -63,3 +63,6 @@ Note: You may need to turn on the motion server in BetterJoy/DS4Windows to enabl
 
 Now just set the language to whatever language your game will be in, and BCML's setup should be complete! When you boot the game, go into `Options > Graphics packs` and enable the pack named `BCML` (in the `Mods` dropdown). If you don't enable this, none of the mods installed in BCML will take effect.
 
+# Getting to know BCML
+
+Now that BCML is set up, you can install some mods. All mods for BOTW are posted on [Gamebanana](https://gamebanana.com/games/5866). Any mods in the `.bnp` format will have an option for `1-Click Install`. When you click it, it'll download the mod right into BCML and then bring up a prompt to install it. The only problem is that there's no download progress bar, and some mods can be massive. There's also an integrated Gamebanana tab in BCML, although it can be really slow sometimes. Personally, I'd recommend using the download button and saving the mod file. You can install the mod file by pressing the `+` in the bottom right of BCML, then press `Browse` and select the mod you downloaded. Assuming everything is set up correctly, it should be applied the next time you boot up the game. If you need any more info, refer to the BCML help.
