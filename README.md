@@ -8,7 +8,7 @@ Requirements:
 
 -Physical or Digital copy of BOTW for Wii U
 
--[Python 3.8.10](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) (3.9 doesn't work)
+-[Python 3.8.10](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) or [3.7.9](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe) (3.9 doesn't work)
 	
 # Basic Cemu Setup
 	
@@ -49,7 +49,7 @@ Note: You may need to turn on the motion server in BetterJoy/DS4Windows to enabl
 	
 # [BCML](https://github.com/NiceneNerd/BCML) Setup
 
--BCML requires Python [3.8.10](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) and the [x64 Visual C++ redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads#section-2). When you open the Python 3.8 installer, there will be a checkbox that says `Add Python to PATH`. You MUST check this box, or else BCML can't be installed. From here, continue as normal, and install the x64 Visual C++ redistributable.
+-BCML requires Python [3.8.10](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) or [3.7.9](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe) and the [x64 Visual C++ redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads#section-2). When you open the Python installer, there will be a checkbox that says `Add Python to PATH`. You MUST check this box, or else BCML can't be installed. From here, continue as normal, and install the x64 Visual C++ redistributable.
 
 -Open a command prompt anywhere (if you don't know how, just type `cmd` into Windows Search). Run `pip install bcml` (in normal cmd, NOT the python console). You should see a bunch of progress bars, and then a success message.
 
