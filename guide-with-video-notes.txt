@@ -1,4 +1,4 @@
-This version of the guide has notes for anyone wanting to create a video tutorial using the guide.
+This version of the guide has notes for anyone wanting to create a video tutorial using the guide. My notes are bolded (or would be if this was viewed in Markdown, they're surrounded by double asterisks). 
 
 **I would recommend having all of the download requirements opened in a browser. That way, you can show where to download it, without having to cut the video to wait for any large downloads. (For example, having the Python download page open, showing the installer link, then running the installer you downloaded before recording) If you got BOTW on the eShop, I'd suggest holding off on making a video until Cemu's download manager is done. That way, the video won't be outdated once it's finished. Im hoping to create the smoothest possible experience for new users, so being able to download it right in Cemu (using the video) would be preferable.**
 
