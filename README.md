@@ -61,4 +61,5 @@ Note: You may need to turn on the motion server in BetterJoy/DS4Windows to enabl
 
 ![](https://user-images.githubusercontent.com/73564623/126426446-d7b9b54f-cf95-4721-b9e1-9bb56c7d9554.png)
 
+Now just set the language to whatever language your game will be in, and BCML's setup should be complete! When you boot the game, go into `Options > Graphics packs` and enable the pack named `BCML` (in the `Mods` dropdown). If you don't enable this, none of the mods installed in BCML will take effect.
 
