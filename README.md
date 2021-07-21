@@ -1,3 +1,4 @@
+![filepaths](https://user-images.githubusercontent.com/73564623/126426424-ac380e5c-c872-447a-b1f9-a5d44e0073a5.png)
 Requirements:
 
 -[Cemu](http://cemu.info/index.html#download)
@@ -58,5 +59,7 @@ Note: You may need to turn on the motion server in BetterJoy/DS4Windows to enabl
 -Before I go over the final steps in BCML setup, it's a good time to cover some common misconceptions about BCML. BCML isn't actually loading the mods into the game, Cemu handles that. BCML merges the mod files of multiple mods, then sends them to Cemu to load. This means that you can close BCML as long as it's not remerging or changing your mod list in any way. In order to merge multiple mods, it uses the game files you got from your console and edits copies of them as dictated by a mod. **This does NOT edit your original game files, you can uninstall mods whenever you want.**
 
 -First, BCML needs your Cemu path. This is the folder where Cemu.exe is located. Paste it in the `Cemu Directory` box. Next, BCML needs the filepaths for BOTW's base game, update, and DLC folders. The easiest way to find these is to right click BOTW in Cemu, then click `Game directory`, `Update directory`, or `DLC directory`. For the base game, you have to go up 1 folder, then go into the `content\` folder. Paste this filepath into BCML. For the update and DLC, it'll send you to `101c9400\` instead of `101c9400\code\`. In the case of the update, just go into the `content\` folder. For the DLC, go into `content\0010\` instead of `content\`. At this point, your filepaths should look something like this:
-![](https://user-images.githubusercontent.com/73564623/126426154-71504bbd-636e-47a9-a1c7-e159485dc18f.png)
+
+![](https://user-images.githubusercontent.com/73564623/126426446-d7b9b54f-cf95-4721-b9e1-9bb56c7d9554.png)
+
 
