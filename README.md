@@ -66,3 +66,5 @@ Now just set the language to whatever language your game will be in, and BCML's 
 # Getting to know BCML
 
 Now that BCML is set up, you can install some mods. All mods for BOTW are posted on [Gamebanana](https://gamebanana.com/games/5866). Any mods in the `.bnp` format will have an option for `1-Click Install`. When you click it, it'll download the mod right into BCML and then bring up a prompt to install it. The only problem is that there's no download progress bar, and some mods can be massive. There's also an integrated Gamebanana tab in BCML, although it can be slow. Personally, I'd recommend using the download button and saving the mod file. Install the mod file by pressing the `+` in the bottom right of BCML, then press `Browse` and select the mod you downloaded. Assuming everything is set up correctly, it should be applied the next time you boot up the game. If you need any more info, refer to the BCML help.
+
+If you're here from the Second Wind discord, the 2 BNP files you want can be found [here](https://github.com/CEObrainz/Second-Wind/releases). Since it's a big mod, it can break pretty easily. Usually, other mods should go above SW in the mod list.
