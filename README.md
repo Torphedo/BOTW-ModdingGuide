@@ -47,6 +47,14 @@ Note: You may need to turn on the motion server in BetterJoy/DS4Windows to enabl
 	
 -Play for a bit, and see how it performs. During the first few minutes, there'll be some pop-in and/or lag, which will become less and less common as you play through the game.
 	
-# BCML Setup
+# [BCML](https://github.com/NiceneNerd/BCML) Setup
 
--Create BCML shortcut. Search Python in Windows search, right click and hit Open file location on `IDLE (Python 3.8 64-bit)`. Right click and hit open file location on this shortcut, should bring you to `pythonw.exe`. Right click the exe and hit `Create Shortcut`. Right click the shortcut, hit properties, and add `-m bcml` to the end of the string in the `Target` field. Rename the shortcut to `BCML`, then drag it onto the taskbar to pin it.
+-BCML requires Python [3.8.10](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) and the [x64 Visual C++ redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads#section-2). When you open the Python 3.8 installer, there will be a checkbox that says `Add Python to PATH`. You MUST check this box, or else BCML can't be installed. From here, continue as normal, and install the x64 Visual C++ redistributable.
+
+-Open a command prompt anywhere (if you don't know how, just type `cmd` into Windows Search). Run `pip install bcml` (in normal cmd, NOT the python console). You should see a bunch of progress bars, and then a success message.
+
+-Next, we'll create a shortcut for BCML. Search Python in Windows search, then right click and hit `Open file location` on `IDLE (Python 3.8 64-bit)`. Right click the shortcut it opens to, and click `Open file location` again. This should bring you to `pythonw.exe`. Right click the exe and hit `Create Shortcut`. Right click the shortcut you created, hit `Properties`, and add `-m bcml` to the end of the text in the first box. Rename the shortcut to `BCML`, then drag it onto the taskbar to pin it. Now, you can just click on this shortcut to launch BCML.
+
+-Before I go over the final steps in BCML setup, it's a good time to cover some common misconception about BCML. BCML isn't doing the actual loading of mod files, Cemu handles that. BCML merges the mod files of multiple mods, then sends them to Cemu to load. This means that you can close it as long as it's not remerging or changing your mod list in some way. In order to merge multiple mods, it uses the game files you got from your console and edits them as dictated by a mod. **This does NOT edit your original game files, you can uninstall mods whenever you want.**
+
+-
