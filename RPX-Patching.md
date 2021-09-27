@@ -1,5 +1,3 @@
-Sorry for the repost, I wanted to include some convenient scripts, and after talking to some people, I decided the Tools section was better. Enjoy the scripts!  
-  
 In this tutorial, I'll show you how to directly patch the game's executable file in order to use code edits on Wii U hardware. This method probably won't work on complex patches such as SotW, or anything that heavily relies on Cemu, like my Master Mode Tweaks mod. Keep in mind that this requires directly replacing the executable file, so keep backups!  
   
 Make a copy of the update executable from your dump into whatever folder you're working in (I'll assume you already know where to find the RPX in your dump). Download the [zip](https://gamebanana.com/dl/657701) of scripts and tools, and extract next to the BOTW RPX you copied. Run `setup.bat`. This will:  
