@@ -1,6 +1,6 @@
 
 In this post, I'll go over Breath of the Wild's general folder structure, and the file formats used in each of these areas of the game. The first thing
-to note is that the game splits all its files between the Base Game directory (`00050000\101c9400\`) and the Update directory (`0005000e\101c9400\`), because the game disc wasn't big enough (this carries over to digital versions too). This is why it won't run in Cemu
+to note is that the game splits all its files between the Base Game directory (`00050000\101c9400\`) and the Update directory (`0005000e\101c9400\`), because the game disc wasn't big enough for the entire thing. (this carries over to digital versions too) This is why it won't run in Cemu
 without the update. If you can't find what you're looking for in the base game, try looking in the update folder instead. 
 
 ## Actor\
@@ -40,3 +40,13 @@ with [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox/releases), 
 When you finish making your edits, save the event flow and put it back into the `.sbeventpack` with Toolbox.
 
 Tools: [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox/releases) and [eventeditor](https://pypi.org/project/eventeditor/)
+
+## Font, Game, and Local
+
+Font is exactly what it sounds like, Game\ has some LOD stuff you'll never need to interact with, and some obscure "Stats" files. Local\ has some region information. I forgot these folders existed, and you probably will too. 
+
+## Map\
+
+This contains `.smubin` files, which from my understanding, are essentially a list of models and where they're located on the map. There's a `.smubin` file for every map square. This is one of the areas of modding I know barely anything about, more information here would greatly appreciated.
+
+Tool: [Ice Spear](https://github.com/NiceneNerd/ice-spear/releases)
