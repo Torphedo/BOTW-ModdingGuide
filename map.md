@@ -57,3 +57,4 @@ BOTW Durability represented in 100s
 ActorInfo instSizes roughly 1.6x - 1.7x on switch (1.7x to be safe)
 
 ForbidAttention stops you from picking up or opening items/chests (interaction of any kind)
+![NANd_ANDS](https://user-images.githubusercontent.com/73564623/137414433-24b70c8c-1e48-41de-8d74-d9634dc25e46.png)
