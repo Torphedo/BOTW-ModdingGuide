@@ -1,21 +1,20 @@
-Static loaded on bootup
-if this is the issue, game will crash about a second after reaching title screen
+Static objects loaded on bootup;    
+If this is the issue, game will crash about a second after reaching title screen
 
-dynamic loaded during loading screen                
-will stop halfway on loading screen if dynamic is the issue              
+Dynamic objects loaded during loading screen;        
+Will stop halfway on loading screen if dynamic is the issue              
 
-static maps can link to objects/events             
-dynamic actors loaded on the fly           
+Static maps can link to objects/events             
+Dynamic actors are loaded on the fly           
 
-Bootup.pack\Ecosystem\LevelSensor.sbyml            
-Contain point thresholds for enemies to advance to the next tier              
-Also contains point award data, which is multiplied by `Level2EnemyPower`             
-When point threshold is reached, moves onto next tier.             
-Enable levelling by setting `LevelSensorMode` to 1 or more            
+Bootup.pack\Ecosystem\LevelSensor.sbyml contain point thresholds for enemies to advance to the next tier      
+Also contains point award data, which is multiplied by `Level2EnemyPower`      
+When point threshold is reached, moves onto next tier.      
+Enable levelling by setting `LevelSensorMode` to 1 or more     
 
-Cannot set point reward value for custom actors without executable patch                
+Cannot set point reward value for custom actors without executable patch     
 
-ActorLink is the only *required* component to register an actor             
+ActorLink is the only *required* component to register an actor    
 Game searches for `Enemy_` for scaling
 
 Once BasicSigOnOnly is set, it stays on             
@@ -48,11 +47,11 @@ LinkTagNONE have no use other than to link your static actors together
 	if you don't, the entire group will not spawn             
 AreaBoxes send signals to LinkTags              
 
-BOTW logic triggers don't really map to logic gates properly, act a little weird           
+BOTW logic triggers don't really map to common logic gates properly        
 
-All saveflags located in Bootup.pack\GameData\GameData.sarc           
+All saveflags are located in Bootup.pack\GameData\GameData.sarc   
 
-BOTW Durability represented in 100s                
+BOTW durability is represented in 100s                
 
 ForbidAttention stops you from picking up or opening items/chests (interaction of any kind)              
 
