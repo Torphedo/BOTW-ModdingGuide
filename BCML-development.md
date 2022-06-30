@@ -1,13 +1,12 @@
-This tutorial will go over a good (and reasonably fast) workflow for developing mods and working around issues BCML sometimes has. I won't be going over any particular edits, just the development process.  
+This tutorial will describe my preferred workflow for developing mods in BCML.
   
 
-Basics
-======
+# Basics
 
   
-[BCML](https://github.com/NiceneNerd/BCML) uses the files of the vanilla (unmodded) game you give it when setting up, and merges them with the incomplete files provided by mod developers. The BNP files it produces are 7zip archives at the Ultra compression setting, which always contain an `info.json`, and a `content`, `logs`, or `patches` folder.  
+[BCML](https://github.com/NiceneNerd/BCML) uses the vanilla (unmodded) game files, and merges them with the incomplete files provided by mod developers. The BNP files it produces are 7zip archives at the Ultra compression setting, which always contain an `info.json`, and `content` / `logs` / `patches` folder(s).  
   
-You can mod files by mirroring the file structure. It's like you're putting your folder onto the vanilla files, but without replacing anything. The easiest way I've found to start a new project is to install this [blank mod](https://cdn.discordapp.com/attachments/754471358553129082/888661075753578506/ValidMod.bnp), then build my mod on top of it. Once you've added whatever mod files you wanted, you can either remerge and test your changes, or build logs. Note that in some cases, your changes may not work without building logs.  
+The first thing you need to know is how to load a specific edited file using BCML. First, you need to start a new project. The easiest way I've found is to install this [blank mod](https://cdn.discordapp.com/attachments/754471358553129082/888661075753578506/ValidMod.bnp), then build on top of it. Let's say for instance that you want to edit `[update folder]\content\Actor\Pack\Weapon_Sword_024.sbactorpack`. Create these same folders in the BCML mod folder (in this case, a folder in `content` named `Actor`, and one inside that named `Pack`. Then, copy the original file into this folder, so that the folder structure resembles that of the original game. Once you make your edits, save the file and press the `Remerge` button in BCML to test your changes.
   
 
 Types of Logs
