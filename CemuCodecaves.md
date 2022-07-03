@@ -19,8 +19,9 @@ the entire address is visible.
 </p>
 
 Copy down the address of your desired codecave in Notepad or another text editor. If you put in a custom name earlier, it will be under that name.
-In this example, the desired codecave is `DurabilityUI`, at address `0x01800000`. Open Windows Calculator, and select Programmer mode in the sidebar.
-Paste in the address you copied, then subtract `1800000`. Copy down the result, this will be your data's offset in a RAM dump later. Also copy down the
+In this example, the desired codecave is `DurabilityUI`, at address `0x01800000`. Open Windows Calculator, select Programmer mode in the sidebar, and
+set it to hex mode.
+Paste in the address you copied, then subtract `0x01800000`. Copy down the result, this will be your data's offset in a RAM dump later. Also copy down the
 value in the `Size` column of Cemu's `Modules` window.
 
 ## Finding The Data
