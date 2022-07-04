@@ -1,5 +1,5 @@
 ## Intro
-In this guide, I'll go over how you can turn all the PowerPPC instructions in a Cemu codecave into assembled hex. In this binary form, they are working PPC
+In this guide, I'll go over how you can turn all the PowerPC instructions in a Cemu codecave into assembled hex. In this binary form, they are working PPC
 instruction data, and could theoretically be placed into an RPX executable.
 This is a key step in porting previously Cemu-exclusive patches to the Wii U console.
 
